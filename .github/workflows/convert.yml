@@ -1,0 +1,37 @@
+name: Convert
+on:
+  schedule:
+    - cron: "0 1 * * *"
+  workflow_dispatch:
+jobs:
+  Convert:
+    name: Convert
+    permissions: write-all
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.1.1
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "lts/*"
+      - name: Convert
+        run: bash convert.sh
+        env:
+          repository: ${{ github.repository }}
+      - name: Release
+        uses: stefanzweifel/git-auto-commit-action@v5.0.0
+        with:
+          branch: release
+          skip_checkout: true
+          skip_dirty_check: true
+          push_options: '--force'
+          file_pattern: release/*
+          commit_message: release
+      - name: Delete workflow runs
+        uses: Mattraks/delete-workflow-runs@v2.0.6
+        with:
+          token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          retain_days: 1
+          keep_minimum_runs: 1
