@@ -76,6 +76,19 @@ Download
 
 ### [28. :house:](https://greasyfork.org/en/scripts/476158-voz-bevietnam-font) - [Voz BeVietnam Font](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/28.user.js)
 
+### [29. :house:](https://greasyfork.org/en/scripts/33005-direct-download-from-google-play) - [Direct download from Google Play](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/29.user.js)
+
+### [30. :house:](https://greasyfork.org/en/scripts/480137-youtube-h-264-fps) - [YouTube H.264 + FPS](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/30.user.js)
+
+### [31. :house:](https://greasyfork.org/en/scripts/479724-lazyloadfier-userscript) - [Lazyloadfier Userscript](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/31.user.js)
+
+### [32. :house:](https://greasyfork.org/en/scripts/479726-preventpagevisibilityauto) - [PreventPageVisibilityAuto](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/32.user.js)
+
+### [33. :house:](https://github.com/AdguardTeam/AdGuardExtra) - [AdGuard Extra](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/33.user.js)
+
+### [34. :house:](https://greasyfork.org/en/scripts/436115-return-youtube-dislike) - [Return YouTube Dislike](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/34.user.js)
+
+### [35. :house:](https://greasyfork.org/en/scripts/16323-youtube-player-controls) - [YouTube Player Controls](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/35.user.js)
 ---
 
 ### Idea inspired by [@gunir](https://github.com/gunir)
