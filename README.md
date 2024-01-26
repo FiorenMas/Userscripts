@@ -89,6 +89,9 @@ Download
 ### [34. :house:](https://greasyfork.org/en/scripts/436115-return-youtube-dislike) - [Return YouTube Dislike](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/34.user.js)
 
 ### [35. :house:](https://greasyfork.org/en/scripts/16323-youtube-player-controls) - [YouTube Player Controls](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/35.user.js)
+
+### [36. :house:](https://github.com/AdvMaple/bilibili-subtitle-download-plugin) - [Bilibili international subtitle downloader](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/36.user.js)
+
 ---
 
 ### Idea inspired by [@gunir](https://github.com/gunir)
