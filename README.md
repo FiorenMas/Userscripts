@@ -92,6 +92,32 @@ Download
 
 ### [36. :house:](https://github.com/AdvMaple/bilibili-subtitle-download-plugin) - [Bilibili international subtitle downloader](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/36.user.js)
 
+### [37. :house:](https://github.com/aligo/better-google) - [Better Google](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/37.user.js)
+
+### [38. :house:](https://greasyfork.org/en/scripts/1190-flickr-original-link) - [Flickr Original](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/38.user.js)
+
+### [39. :house:](https://github.com/machsix/Super-preloader) - [Super-preloader](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/39.user.js)
+
+### [40. :house:](https://adsbypasser.github.io/) - [AdsBypasser Full](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/40.user.js)
+
+### [41. :house:](https://adsbypasser.github.io/) - [AdsBypasser Lite](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/41.user.js)
+
+### [42. :house:](https://greasyfork.org/en/scripts/431970-fb-clean-my-feeds) - [FB - Clean my feeds](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/42.user.js)
+
+### [43. :house:](https://www.fbpurity.com/install.htm) - [F.B. Purity](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/43.user.js)
+
+### [44. :house:](https://socialfixer.com/) - [Social Fixer for Facebook](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/44.user.js)
+
+### [45. :house:](https://greasyfork.org/en/scripts/376694-smart-scroll) - [Smart Scroll](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/45.user.js)
+
+### [46. :house:](https://greasyfork.org/en/scripts/7018-smoothscroll) - [Smoothscroll](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/46.user.js)
+
+### [47. :house:](https://greasyfork.org/en/scripts/419894-image-downloader) - [Image Downloader](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/47.user.js)
+
+### [48. :house:](https://greasyfork.org/en/scripts/30766-pixiv-previewer) - [Pixiv Previewer](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/48.user.js)
+
+### [49. :house:](https://greasyfork.org/vi/scripts/4870-maximize-video) - [Maximize Video](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/49.user.js)
+
 ---
 
 ### Idea inspired by [@gunir](https://github.com/gunir)
