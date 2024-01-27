@@ -33,7 +33,7 @@ function compile_js() {
   google-closure-compiler --warning_level QUIET --js "$file" --js_output_file "js/$base.js"
 }
 export -f compile_js
-parallel -j 4 compile_js ::: pr-js/*.js
+parallel -j 8 compile_js ::: pr-js/*.js
 
 # Merge meta files and js files after compile
 for file in js/*.js; do
