@@ -118,6 +118,50 @@ Download
 
 ### [49. :house:](https://greasyfork.org/vi/scripts/4870-maximize-video) - [Maximize Video](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/49.user.js)
 
+### [50. :house:](https://greasyfork.org/en/scripts/455853-%E7%BD%91%E9%A1%B5%E8%AE%BF%E9%97%AE%E5%8A%A0%E9%80%9F%E5%99%A8) - [Web Access Accelerator](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/50.user.js)
+
+### [51. :house:](https://greasyfork.org/en/scripts/483622-instantpage-super-lite) - [InstantPage Super Lite](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/51.user.js)
+
+### [52. :house:](https://greasyfork.org/en/scripts/482724-reject-serviceworker-auto) - [Reject serviceWorker Auto](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/52.user.js)
+
+### [53. :house:](https://greasyfork.org/en/scripts/7750-4chan-x) - [4chan X](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/53.user.js)
+
+### [54. :house:](https://greasyfork.org/en/scripts/440266-4chan-archive-image-downloader) - [4chan Archive Image Downloader](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/54.user.js)
+
+### [55. :house:](https://greasyfork.org/en/scripts/6294-pageexpand) - [PageExpand](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/55.user.js)
+
+### [56. :house:](https://greasyfork.org/en/scripts/469878-youtube-super-fast-chat) - [YouTube Super Fast Chat](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/56.user.js)
+
+### [57. :house:](https://greasyfork.org/en/scripts/464888-disable-youtube-music-autopause) - [Disable YouTube Music AutoPause](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/57.user.js)
+
+### [58. :house:](https://greasyfork.org/en/scripts/479874-toggle-fullscreen-button-for-mobile-browsers) - [Toggle Fullscreen Button For Mobile Browsers](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/58.user.js)
+
+### [59. :house:](https://github.com/KevinParnell/OneeChan) - [OneeChan](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/59.user.js)
+
+### [60. :house:](https://github.com/drunohazarb/4chan-captcha-solver) - [4chan-captcha-solver](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/60.user.js)
+
+### [61. :house:](https://greasyfork.org/en/scripts/391758-4chan-image-resizer) - [4chan Image Resizer](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/61.user.js)
+
+### [62. :house:](https://github.com/AdguardTeam/PopupBlocker) - [Popup Blocker by AdGuard](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/62.user.js)
+
+### [63. :house:](https://greasyfork.org/en/scripts/457196-immersive-translate) - [Immersive Translate](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/63.user.js)
+
+### [64. :house:](https://greasyfork.org/en/scripts/465051-chatgpt-infinity) - [ChatGPT Infinity ∞](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/64.user.js)
+
+### [65. :house:](https://greasyfork.org/en/scripts/416688-%E5%AD%97%E4%BD%93%E6%B8%B2%E6%9F%93-%E8%87%AA%E7%94%A8%E8%84%9A%E6%9C%AC) - [Font Rendering (Customized)](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/65.user.js)
+
+### [66. :house:](https://greasyfork.org/en/scripts/456108-youtube%E8%AF%84%E8%AE%BA%E7%BF%BB%E8%AF%91%E6%8C%89%E9%92%AE) - [YouTube Comment Translation Button](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/66.user.js)
+
+### [67. :house:](https://greasyfork.org/en/scripts/478739-netflix-plus) - [Netflix Plus](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/67.user.js)
+
+### [68. :house:](https://greasyfork.org/en/scripts/456881-%E8%B7%9F%E8%B8%AA%E9%93%BE%E6%8E%A5%E5%87%80%E5%8C%96) - [Clean Tracking URLs](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/68.user.js)
+
+### [69. :house:](https://greasyfork.org/en/scripts/464879-youtube-dual-subtitle) - [Youtube dual subtitle](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/69.user.js)
+
+### [70. :house:](https://greasyfork.org/en/scripts/404497-reddit-fix) - [Reddit Fix](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/70.user.js)
+
+### [71. :house:](https://greasyfork.org/en/scripts/4255-linkify-plus-plus) - [Linkify Plus Plus](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/71.user.js)
+
 ---
 
 ### Idea inspired by [@gunir](https://github.com/gunir)
