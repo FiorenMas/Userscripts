@@ -162,6 +162,10 @@ Download
 
 ### [71. :house:](https://greasyfork.org/en/scripts/4255-linkify-plus-plus) - [Linkify Plus Plus](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/71.user.js)
 
+### [72. :house:](https://github.com/TuxedoTako/4chan-xt) - [4chan XT](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/72.user.js)
+
+### [73. :house:](https://greasyfork.org/en/scripts/15173-visited-lite) - [Visited Lite](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/73.user.js)
+
 ---
 
 ### Idea inspired by [@gunir](https://github.com/gunir)
