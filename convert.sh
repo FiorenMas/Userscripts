@@ -30,7 +30,10 @@ done
 function compile_js() {
   local file=$1
   base=$(basename "$file" .js)
-  google-closure-compiler --warning_level QUIET --js "$file" --js_output_file "js/$base.js"
+  eval google-closure-compiler --compilation_level SIMPLE --language_in ECMASCRIPT_NEXT --language_out ECMASCRIPT_NEXT --warning_level QUIET --js "$file" --js_output_file "js/$base.js"
+  if [ ! -f "js/$base.js" ]; then
+    eval google-closure-compiler --compilation_level WHITESPACE_ONLY --language_in ECMASCRIPT_NEXT --language_out ECMASCRIPT_NEXT --warning_level QUIET --js "$file" --js_output_file "js/$base.js"
+  fi
 }
 export -f compile_js
 parallel -j 8 compile_js ::: pr-js/*.js

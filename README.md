@@ -102,7 +102,7 @@ Download
 
 ### [41. :house:](https://adsbypasser.github.io/) - [AdsBypasser Lite](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/41.user.js)
 
-### [42. :house:]() - []()
+### [42. :house:](https://greasyfork.org/en/scripts/431970-fb-clean-my-feeds) - [FB - Clean my feeds](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/42.user.js)
 
 ### [43. :house:](https://www.fbpurity.com/install.htm) - [F.B. Purity](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/43.user.js)
 
@@ -165,6 +165,26 @@ Download
 ### [72. :house:](https://github.com/TuxedoTako/4chan-xt) - [4chan XT](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/72.user.js)
 
 ### [73. :house:](https://greasyfork.org/en/scripts/15173-visited-lite) - [Visited Lite](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/73.user.js)
+
+### [74. :house:](https://greasyfork.org/en/scripts/473972-youtube-js-engine-tamer) - [YouTube JS Engine Tamer](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/74.user.js)
+
+### [75. :house:](https://greasyfork.org/en/scripts/381682-html5%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%99%A8%E5%A2%9E%E5%BC%BA%E8%84%9A%E6%9C%AC) - [HTML5 video player enhanced script](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/75.user.js)
+
+### [76. :house:](https://greasyfork.org/en/scripts/428651-tabview-youtube) - [Tabview Youtube](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/76.user.js)
+
+### [77. :house:](https://github.com/abpvn/abpvn/tree/master/script) - [ABPVN Script](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/77.user.js)
+
+### [78. :house:](https://greasyfork.org/en/scripts/436359-privacy-redirector) - [Privacy Redirector](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/78.user.js)
+
+### [79. :house:](https://greasyfork.org/en/scripts/394820-mouseover-popup-image-viewer) - [Mouseover Popup Image Viewer](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/79.user.js)
+
+### [80. :house:](https://greasyfork.org/en/scripts/431691-bypass-all-shortlinks) - [Bypass ShortLink](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/80.user.js)
+
+### [81. :house:](https://greasyfork.org/en/scripts/443888-additional-bypass) - [Additional Bypass](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/81.user.js)
+
+### [82. :house:](https://github.com/syhyz1990/instantpage) - [Web accelerator](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/82.user.js)
+
+### [83. :house:](https://github.com/syhyz1990/baiduyun) - [Pan Baidu direct link download assistant](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/83.user.js)
 
 ---
 
