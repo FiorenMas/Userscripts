@@ -166,7 +166,7 @@ Download
 
 ### [73. :house:](https://greasyfork.org/en/scripts/15173-visited-lite) - [Visited Lite](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/73.user.js)
 
-### [74. :house:](https://greasyfork.org/en/scripts/473972-youtube-js-engine-tamer) - [YouTube JS Engine Tamer](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/74.user.js)
+### [74. :house:](https://update.greasyfork.org/scripts/440060/Anti%20Anti-debugger.user.js) - [Anti Anti-debugger](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/74.user.js)
 
 ### [75. :house:](https://greasyfork.org/en/scripts/381682-html5%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%99%A8%E5%A2%9E%E5%BC%BA%E8%84%9A%E6%9C%AC) - [HTML5 video player enhanced script](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/75.user.js)
 
