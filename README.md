@@ -148,7 +148,7 @@ Download
 
 ### [64. :house:](https://greasyfork.org/en/scripts/465051-chatgpt-infinity) - [ChatGPT Infinity ∞](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/64.user.js)
 
-### [65. :house:](https://greasyfork.org/en/scripts/416688-%E5%AD%97%E4%BD%93%E6%B8%B2%E6%9F%93-%E8%87%AA%E7%94%A8%E8%84%9A%E6%9C%AC) - [Font Rendering (Customized)](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/65.user.js)
+### []() - []()
 
 ### [66. :house:](https://greasyfork.org/en/scripts/456108-youtube%E8%AF%84%E8%AE%BA%E7%BF%BB%E8%AF%91%E6%8C%89%E9%92%AE) - [YouTube Comment Translation Button](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/66.user.js)
 
