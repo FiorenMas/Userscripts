@@ -102,7 +102,7 @@ Download
 
 ### [41. :house:](https://adsbypasser.github.io/) - [AdsBypasser Lite](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/41.user.js)
 
-### [42. :house:](https://greasyfork.org/en/scripts/431970-fb-clean-my-feeds) - [FB - Clean my feeds](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/42.user.js)
+### [42. :house:]() - []()
 
 ### [43. :house:](https://www.fbpurity.com/install.htm) - [F.B. Purity](https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/43.user.js)
 
