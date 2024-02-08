@@ -26,7 +26,7 @@ jobs:
           skip_checkout: true
           skip_dirty_check: true
           push_options: '--force'
-          file_pattern: release/*
+          file_pattern: 'release/*'
           commit_message: release
       - name: Delete workflow runs
         uses: Mattraks/delete-workflow-runs@v2
