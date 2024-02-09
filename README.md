@@ -1,7 +1,7 @@
 ![](https://raw.githubusercontent.com/FiorenMas/Userscripts/main/docs/images/Banner.png)
 
 <h4 align="center">
-		Userscripts in this repository are compiled with Google Closure Compiler for reduced size and enhanced speed.
+		Userscripts in this repository are compiled with <a href="https://terser.org/">Terser</a> for reduced size and enhanced speed.
 </h4>
 
 ---
