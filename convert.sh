@@ -44,7 +44,7 @@ done
 function compile_js() {
   local file=$1
   base=$(basename "$file" .js)
-  eval terser --compress --comments false --output js/$base.js -- $file
+  eval terser --compress --mangle --comments false --output js/$base.js -- $file
 }
 export -f compile_js
 parallel -j 8 compile_js ::: pr-js/*.js
