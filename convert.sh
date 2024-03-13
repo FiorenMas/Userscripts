@@ -15,9 +15,6 @@ while read -r line; do
       file=$(echo "$file" | tr -cd '[:alnum:].')
       if [[ -f "download/$file" ]]; then
         suffix="A"
-        while [[ -f "download/$suffix$file" ]]; do
-          suffix=$(echo "$suffix" | tr "0-9A-Z" "1-9A-Z_")
-        done
         file="$suffix$file"
       fi
       wget -q -U "User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/119.0" "$url" -O "download/$file"
