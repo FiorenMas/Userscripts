@@ -1,0 +1,16 @@
+// ==UserScript==
+// @name         Better Google
+// @namespace    google
+// @version      0.1.16.9
+// @description  Restore google search results to older style with green link below title instead of link above title.  Just tweaks the CSS and does some dynamic JS reordering of the DIVs.
+// @author       aligo, adambh, tejaslodaya, drwonky, yut23
+// @license      MIT
+// @homepageURL   https://github.com/aligo/better-google
+// @match        https://*.google.com/search?*
+// @include      /^https?://(?:www|encrypted|ipv[46])\.google\.[^/]+/(?:$|[#?]|search|webhp)/
+// @grant        none
+// @run-at       document-start
+// @downloadURL https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/Better20Google.user.js
+// @updateURL https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/Better20Google.meta.js
+// ==/UserScript==
+!function(){"use strict";var e=function(e){var t=e.querySelectorAll(".TbwUpd, .HGLrXd");if(t.length>0){for(const t of[".yuRUbf > a",".yuRUbf > div > a",".yuRUbf > div > span > a"]){var r=e.querySelector(t);if(r)break}var n=r.nextSibling;n||(n=r.parentElement.nextSibling);var l=document.createElement("div");if(l.className="btrAdd",!n)return void l.remove();for(var i=0;i<n.children.length;i++){var o=n.children[i];o.className.includes("TbwUpd")||o.className.includes("HGLrXd")||l.appendChild(o)}var a=document.createElement("div");a.className="btrG",a.appendChild(l),e.appendChild(a);var c=document.createElement("a");c.href=r.href,c.target="_blank",c.className="btrLink";var d=document.createElement("cite");d.innerText=r.href,d.className="iUh30 bc",c.appendChild(d);var u=e.clientWidth-l.offsetWidth-10;a.insertBefore(c,l),c.offsetWidth>u&&(c.style.width=u.toString()+"px");var s=e.querySelectorAll(".csDOgf");s.length>0&&a.appendChild(s[0]),t.forEach((function(e){e.remove()})),r.querySelector("br:first-child").remove()}},t=0,r=!1,n=function(){if(t!=document.querySelectorAll(".g .yuRUbf").length&&(document.querySelectorAll(".g .yuRUbf").forEach(e),t=document.querySelectorAll(".g .yuRUbf").length),!r){if(null!=MutationObserver){var l=document.getElementById("rcnt");new MutationObserver(n).observe(l,{childList:!0,subtree:!0})}r=!0}},l=function(e,t){null==document.querySelector(e)?null!=window.requestAnimationFrame?window.requestAnimationFrame((function(){l(e,t)})):document.addEventListener("readystatechange",(function(e){"complete"==document.readyState&&t()})):t()};l("head",(function(){var e="#006621",t=document.querySelector('meta[name="color-scheme"]');null!=t&&t.content.includes("dark")&&(e="#40965b");var r=document.createElement("style");r.setAttribute("media","screen"),r.appendChild(document.createTextNode("")),document.head.appendChild(r),r.sheet.insertRule(`:root { --btrG-link-color: ${e}; }`),r.sheet.insertRule(".btrG { word-break: normal; line-height: 18px; }"),r.sheet.insertRule(".btrG .btrAdd { display: inline-block; vertical-align: top; line-height: 0; }"),r.sheet.insertRule(".btrG .btrLink { display: inline-block; vertical-align: top; line-height: 18px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-decoration: none !important; color: var(--btrG-link-color); }"),r.sheet.insertRule(".btrG .btrLink cite.iUh30 { color: var(--btrG-link-color); font-size: 16px; }"),r.sheet.insertRule(".yuRUbf h3.DKV0Md { margin-top: 0px; }")})),l("#rcnt",n)}();
