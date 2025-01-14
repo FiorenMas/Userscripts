@@ -36,7 +36,7 @@ done
 # Switch @downloadURL and @updateURL to our repository and remove unnecessary locale
 for file in meta/*.meta.js; do
   base=$(basename "$file" .meta.js)
-  sed -i '/^\/\/ @name:/d' "$file"
+  sed -i '/^\/\/ @name:/ { /^\/\/ @name:en/!d }' "$file"
   sed -i '/^\/\/ @description:/d' "$file"
   sed -i "s|// @downloadURL .*|// @downloadURL https://raw.githubusercontent.com/$repository/release/release/$base.user.js|" "$file"
   sed -i "s|// @updateURL .*|// @updateURL https://raw.githubusercontent.com/$repository/release/release/$base.meta.js|" "$file"
