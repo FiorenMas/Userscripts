@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install Terser
-npm install terser -g
+npm install terser -g > /dev/null 2>&1
 # Make directories
 mkdir download pr-js meta js release
 
@@ -33,9 +33,11 @@ for file in download/*.user.js; do
   sed -n '/\/\/ ==\/UserScript==/,$p' "$file" | tail -n +2 > "pr-js/$base.js"
 done
 
-# Switch @downloadURL and @updateURL to our repository
+# Switch @downloadURL and @updateURL to our repository and remove unnecessary locale
 for file in meta/*.meta.js; do
   base=$(basename "$file" .meta.js)
+  sed -i '/^\/\/ @name:/d' "$file"
+  sed -i '/^\/\/ @description:/d' "$file"
   sed -i "s|// @downloadURL .*|// @downloadURL https://raw.githubusercontent.com/$repository/release/release/$base.user.js|" "$file"
   sed -i "s|// @updateURL .*|// @updateURL https://raw.githubusercontent.com/$repository/release/release/$base.meta.js|" "$file"
 done
@@ -44,7 +46,7 @@ done
 function compile_js() {
   local file=$1
   base=$(basename "$file" .js)
-  eval terser --compress --mangle --comments false --output js/$base.js -- $file
+  eval terser --compress --mangle --comments false --parse bare_returns --output js/$base.js -- $file
 }
 export -f compile_js
 parallel -j 8 compile_js ::: pr-js/*.js
@@ -62,7 +64,7 @@ mv List release/README.md
 #Checking convert errors:
 for meta in release/*.meta.js; do
   base=${meta%.meta.js}
-  if [ ! -f "$base.user.js" ]; then
+  if [ -z "$base.user.js" ]; then
      echo -e "\e[31m[-] Failed to convert user file $base.user.js\e[0m"
   fi
 done
