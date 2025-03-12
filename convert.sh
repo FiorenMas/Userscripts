@@ -59,12 +59,13 @@ for file in js/*.js; do
   userscript_name=$(echo "$userscript_name" | tr -d '\r\n')
   if [[ -z "$userscript_name" ]]; then
     echo -e "\e[31mError: Missing \"$base.meta.js\"\e[0m"
-    continue
+    rm -f meta/$base.meta.js release/$base.user.js
   fi
   js_file_content=$(cat "js/$base.js")
   js_file_length=${#js_file_content}
   if [[ $js_file_length -lt 100 ]]; then
     echo -e "\e[31mFailed to convert userscript: \"$userscript_name\"\e[0m"
+    rm -f meta/$base.meta.js release/$base.user.js
   else
     cat "meta/$base.meta.js" "js/$base.js" > "release/$base.user.js"
     echo -e "Completed to convert userscript: \"$userscript_name\""
