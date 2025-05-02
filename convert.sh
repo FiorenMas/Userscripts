@@ -20,7 +20,7 @@ while read -r line; do
         done
         file="$suffix$file"
       fi
-      wget -q --header="User-Agent: Mozilla/5.0 (Android 14; Mobile; rv:134.0) Gecko/134.0 Firefox/138.0" \
+      wget -q --header="User-Agent: Mozilla/5.0 (Android 14; Mobile; rv:138.0) Gecko/138.0 Firefox/138.0" \
            --header="Content-Type: application/octet-stream" \
            --header="Accept-Language: en-US,en;q=0.9" \
            --header="Connection: keep-alive" \
