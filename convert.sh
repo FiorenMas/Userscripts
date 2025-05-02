@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Install Terser
-npm install terser -g > /dev/null 2>&1
+# Install ESBuild
+npm install --save-exact --save-dev esbuild > /dev/null 2>&1
 # Make directories
 mkdir download pr-js meta js release
 
@@ -20,7 +20,7 @@ while read -r line; do
         done
         file="$suffix$file"
       fi
-      wget -q --header="User-Agent: Mozilla/5.0 (Android 14; Mobile; rv:134.0) Gecko/134.0 Firefox/134.0" \
+      wget -q --header="User-Agent: Mozilla/5.0 (Android 14; Mobile; rv:134.0) Gecko/134.0 Firefox/138.0" \
            --header="Content-Type: application/octet-stream" \
            --header="Accept-Language: en-US,en;q=0.9" \
            --header="Connection: keep-alive" \
@@ -53,10 +53,10 @@ done
 function compile_js() {
   local file=$1
   base=$(basename "$file" .js)
-  eval terser --compress --mangle --comments false --parse bare_returns --output js/$base.js -- $file
+  npx esbuild $file --minify --outfile="js/$base.js"
 }
 export -f compile_js
-parallel -j 16 compile_js ::: pr-js/*.js
+parallel -j 8 compile_js ::: pr-js/*.js
 
 # Merge meta files and js files, check errors
 for file in js/*.js; do
