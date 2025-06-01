@@ -224,8 +224,6 @@
 
 ### [:house:](https://github.com/AdguardTeam/PopupBlocker) - [Popup Blocker by AdGuard](https://userscripts.adtidy.org/beta/popup-blocker/2.5/popupblocker.user.js)
 
-### [:house:](https://greasyfork.org/en/scripts/476683-chatgpt-chattree) - [ChatGPT ChatTree 🌳](https://update.greasyfork.org/scripts/476683/ChatGPT%20ChatTree%20%F0%9F%8C%B3.user.js)
-
 ### [:house:](https://github.com/adamlui/chatgpt-infinity/tree/main/greasemonkey) - [ChatGPT Infinity ∞](https://github.com/adamlui/chatgpt-infinity/raw/refs/heads/main/greasemonkey/chatgpt-infinity.user.js)
 
 ### [:house:](https://greasyfork.org/en/scripts/468905-chatgpt-model-switcher-supports-gpt-4-mobile-and-all-available-models) - [ChatGPT Model Switcher](https://update.greasyfork.org/scripts/468905/ChatGPT%20Model%20Switcher%20%28Supports%20GPT-4%20Mobile%20and%20All%20Available%20Models%29.user.js)
@@ -256,7 +254,7 @@
 
 ### [:house:](https://update.greasyfork.org/scripts/440060/Anti%20Anti-debugger.user.js) - [Anti Anti-debugger](https://update.greasyfork.org/scripts/440060/Anti%20Anti-debugger.user.js)
 
-### [:house:](https://greasyfork.org/en/scripts/381682-html5%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%99%A8%E5%A2%9E%E5%BC%BA%E8%84%9A%E6%9C%AC) - [HTML5 video player enhanced script](https://update.greasyfork.org/scripts/381682/HTML5%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%99%A8%E5%A2%9E%E5%BC%BA%E8%84%9A%E6%9C%AC.user.js)
+### [:house:](https://github.com/xxxily/h5player) - [HTML5 video player enhanced script](https://raw.githubusercontent.com/xxxily/h5player/refs/heads/master/dist/h5player.user.js)
 
 ### [:house:](https://greasyfork.org/en/scripts/30545-html5%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%B7%A5%E5%85%B7) - [HTML5 Video Playing Tools](https://update.greasyfork.org/scripts/30545/HTML5%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%B7%A5%E5%85%B7.user.js)
 
