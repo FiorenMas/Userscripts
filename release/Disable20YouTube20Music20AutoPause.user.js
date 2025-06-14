@@ -1,0 +1,20 @@
+// ==UserScript==
+// @name                Disable YouTube Music AutoPause
+// @name:en             Disable YouTube Music AutoPause
+// @namespace           http://tampermonkey.net/
+// @version             2023.12.01.0
+// @license             MIT License
+// @author              CY Fung
+// @match               https://music.youtube.com/*
+// @exclude             /^https?://\S+\.(txt|png|jpg|jpeg|gif|xml|svg|manifest|log|ini)[^\/]*$/
+// @icon                https://raw.githubusercontent.com/cyfung1031/userscript-supports/main/icons/disable-youtube-autopause.svg
+// @supportURL          https://github.com/cyfung1031/userscript-supports
+// @run-at              document-start
+// @grant               none
+// @unwrap
+// @allFrames           true
+// @inject-into         page
+// @downloadURL https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/Disable20YouTube20Music20AutoPause.user.js
+// @updateURL https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/Disable20YouTube20Music20AutoPause.meta.js
+// ==/UserScript==
+(function(k){"use strict";const c=(async()=>{})().constructor,d=new WeakMap,v=new WeakMap,M=new WeakMap,u="YouTube Music";let h=0;const y=e=>e?e.polymerController||e.inst||e||0:e||0,D=e=>y(e).$||e.$||0;function L(...e){Date.now()<h||(h=Date.now()+280,console.log(...e))}function P(e,t,o,n,a,m,s){Object.defineProperty(e,t,{enumerable:!0,configurable:!0,get(){c.resolve(new Date).then(a).catch(console.warn);let r=n;return o===2?`${r}`:r},set(r){let i=s.get(this);return c.resolve([i,r,new Date]).then(m).catch(console.warn),s.set(this,r),!0}})}function _(e,t,o){Object.defineProperty(e,t,{enumerable:!0,configurable:!0,get(){const n=this[o];return(n||0).length>=1&&(n.length=0),n},set(n){return!0}})}function T(e){if(!e||d.has(e))return;const t=e.playbackPauseDelayMs,o=e.promptDelaySec,n=e.lactThresholdMs,a=Math.floor(Number.MAX_SAFE_INTEGER*.1),m=Math.floor(a/1e3);if("playbackPauseDelayMs"in e&&t>=0&&t<4*a){d.set(e,t);const s=typeof t=="string"?2:+(typeof t=="number");s>=1&&P(e,"playbackPauseDelayMs",s,5*a,r=>{L(`${u} is trying to pause video...`,r.toLocaleTimeString())},r=>{const[i,f,p]=r;console.log(`${u} is trying to change value 'playbackPauseDelayMs' from ${i} to ${f} ...`,p.toLocaleTimeString())},d),typeof(e.showPausedActions||0).length=="number"&&!e.tvTyh&&(e.tvTyh=[],_(e,"showPausedActions","tvTyh"))}if("promptDelaySec"in e&&o>=0&&o<4*m){v.set(e,o);const s=typeof o=="string"?2:+(typeof o=="number");s>=1&&P(e,"promptDelaySec",s,5*m,r=>{L(`${u} is trying to pause video...`,r.toLocaleTimeString())},r=>{const[i,f,p]=r;console.log(`${u} is trying to change value 'promptDelaySec' from ${i} to ${f} ...`,p.toLocaleTimeString())},v)}if("lactThresholdMs"in e&&n>=0&&n<4*a){M.set(e,n);const s=typeof n=="string"?2:+(typeof n=="number");s>=1&&P(e,"lactThresholdMs",s,5*a,r=>{},r=>{const[i,f,p]=r;console.log(`${u} is trying to change value 'lactThresholdMs' from ${i} to ${f} ...`,p.toLocaleTimeString())},M)}}let b=Symbol(),g=0;function $(e){if(e==1||e==3){g>1e9&&(g=9);let t=g;requestAnimationFrame(()=>{t===g&&w()})}}function w(){let e=null;const t=document.querySelector("#player")||0;try{e=(y(t).__data||t.__data||0).playerResponse_.messages}catch{}if(e&&e.length>0){for(const o of e)if(o.youThereRenderer){let n=null;try{n=o.youThereRenderer.configData.youThereData}catch{}n&&T(n),n=null;break}}}let l=0;function S(){w();const e=document.querySelector("#player")||0,t=y(e).playerApi_||e.playerApi_||y(e).playerApi||e.playerApi||0;typeof t=="object"&&(typeof t[b]>"u"&&typeof t.getPlayerState=="function"&&(t[b]=t.getPlayerState,t.getPlayerState=function(){let o=this[b](...arguments);if(o==1||o==3)try{w()}catch{}return o}),"removeEventListener"in t&&"addEventListener"in t&&(t.removeEventListener("onStateChange",$,!1),t.addEventListener("onStateChange",$,!1)))}async function A(){h=Date.now()+3400,l++;let e=l;l>1e9&&(l=9),await c.resolve(0),e===l&&(S(),await new c(t=>setTimeout(t,3200)),e===l&&(S(),await new c(t=>setTimeout(t,5400)),e===l&&S()))}function E(e){e.target.nodeName=="VIDEO"&&e.target.closest("#player")&&A()}document.addEventListener("canplay",E,!0)})(Promise);
