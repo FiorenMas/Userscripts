@@ -1,0 +1,21 @@
+// ==UserScript==
+// @name        4chan Archive Image Downloader
+// @namespace   Violentmonkey Scripts
+// @match       https://archive.4plebs.org/*/thread/*
+// @match       https://desuarchive.org/*/thread/*
+// @match       https://boards.fireden.net/*/thread/*
+// @match       https://archived.moe/*/thread/*
+// @match       https://thebarchive.com/*/thread/*
+// @match       https://archiveofsins.com/*/thread/*
+// @match       https://archive.alice.al/*/thread/*
+// @match       https://arch.b4k.co/*/thread/*
+// @match       https://archive.palanq.win/*/thread/*
+// @grant       GM_download
+// @grant       GM_registerMenuCommand
+// @version     1.4.2
+// @license     The Unlicense
+// @author      ImpatientImport
+// @downloadURL https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/4chan20Archive20Image20Downloader.user.js
+// @updateURL https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/4chan20Archive20Image20Downloader.meta.js
+// ==/UserScript==
+var indiv_button_enabled=!0,api_button_enabled=!1,keep_original_filenames=!0,archive_filenames=!0,confirm_download=!0,download_limit=3e3,named_poster_media_download_only=!1,named_poster_tag_in_filename=!1;(function(){"use strict";const h=document.getElementsByClassName("post_controls")[0],y=document.URL,S=y.toString().split("/")[2],w=new URL(y).pathname.toString().split("/"),E=w[1],u=w[3],C="https://"+S+"/_/api/chan/thread/?board="+E+"&num="+u;var e,r,p,f;indiv_button_enabled&&(e=document.createElement("a"),e.id="indiv_btn",e.classList.add("btnr","parent"),e.innerText="Indiv DL",h.append(e),r=document.getElementById("indiv_btn"),p=window.getComputedStyle(e),f={backgroundColor:p.backgroundColor,color:p.color});var l,T;api_button_enabled&&(l=document.createElement("a"),l.id="api_btn",l.href=C,l.target="new",l.classList.add("btnr","parent"),l.innerText="Thread API",h.append(l),T=document.getElementById("api_btn"));function g(n){console.log(n);var i=window.getComputedStyle(n).backgroundColor,o;const m={indiv_btn:"Indiv DL"},a={indiv_btn:f},s={backgroundColor:"rgb(255, 64, 64)",color:"white"},k={backgroundColor:"rgb(238, 210, 2)",color:"black"},L={backgroundColor:"rgb(46, 139, 87)",color:"white"},d={backgroundColor:a[n.id].backgroundColor,color:a[n.id].color};switch(i){case"rgba(0, 0, 0, 0)":o=s,n.innerText="Confirm?";break;case"rgb(255, 64, 64)":o=k,n.innerText="Processing";break;case"rgb(238, 210, 2)":o=L,n.innerText="Done";break;case"rgb(46, 139, 87)":o=d,n.innerText=m[n.id];break}Object.assign(n.style,o)}function x(n){var i=[],o=[],m=[];const a=n[u].op.media;var s=keep_original_filenames?a.media_filename:a.media_orig;s=!keep_original_filenames&&archive_filenames?a.media:s,s=named_poster_tag_in_filename&&named_poster_media_download_only?n[u].op.name+"_-_"+s:s;var k=a.media_link==null?a.remote_media_link:a.media_link;if((!named_poster_media_download_only||named_poster_media_download_only&&n[u].op.name!="Anonymous")&&(i.push(k),o.push(s)),n[u].posts!=null){const t=n[u].posts,v=Object.keys(t),A=v.length;for(var d=0;d<A;d++){var c=t[v[d]].media;if(c!==null&&(!named_poster_media_download_only||named_poster_media_download_only&&t[v[d]].name!="Anonymous")){var I=c.media_link==null?c.remote_media_link:c.media_link,_=keep_original_filenames?c.media_filename:c.media_orig;_=!keep_original_filenames&&archive_filenames?c.media:_,_=named_poster_tag_in_filename&&named_poster_media_download_only?t[v[d]].name+"_-_"+_:_,i.push(I),o.push(_)}}}m[0]=i,m[1]=o;function P(t){return new Promise(v=>setTimeout(v,t))}async function D(){for(var t=0;t<i.length;t++)await P(download_limit),GM_download(i[t],o[t])}D(),confirm_download&&(g(r),setTimeout(g(r),3e3))}async function b(){const i=await(await fetch(C)).json();console.log(i),x(i)}function O(){g(r),setTimeout(function(){window.getComputedStyle(e).backgroundColor=="rgb(255, 64, 64)"&&(e.removeEventListener("click",g),e.addEventListener("click",b),setTimeout(function(){e.removeEventListener("click",b),e.addEventListener("click",g),Object.assign(r.style,f),e.innerText="Indiv DL"},5e3))},501)}GM_registerMenuCommand("Download all thread images individually",b),confirm_download?(r.addEventListener("click",O),r.addEventListener("dblclick",b)):r.addEventListener("click",b)})();
