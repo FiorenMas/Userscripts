@@ -1,0 +1,30 @@
+// ==UserScript==
+// @name               老司机修炼手册
+// @name:en            PornEnhance
+// @namespace          http://github.com/GangPeter
+// @version            4.0.2
+// @author             GangPeter
+// @license            None
+// @icon               https://missav.ws/favicon.ico
+// @homepageURL        https://github.com/GangPeter/porn-enhance
+// @supportURL         https://github.com/GangPeter/porn-enhance
+// @match              *://*.missav.com/*
+// @match              *://*.missav.ws/*
+// @match              *://*.missav.ai/*
+// @match              *://*.jable.tv/*
+// @match              *://*.pornhub.com/*
+// @match              *://*.18comic.org/*
+// @match              *://*.18comic.vip/*
+// @match              *://*.91porn.com/*
+// @match              *://*.91porna.com/*
+// @match              *://*.xvideos.com/*
+// @require            https://registry.npmmirror.com/vue/3.5.13/files/dist/vue.global.prod.js
+// @grant              GM_addStyle
+// @grant              GM_getValue
+// @grant              GM_registerMenuCommand
+// @grant              GM_setValue
+// @grant              unsafeWindow
+// @run-at             document-start
+// @downloadURL https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/E88081E58FB8E69CBAE4BFAEE782BCE6898BE5868C.user.js
+// @updateURL https://raw.githubusercontent.com/FiorenMas/Userscripts/release/release/E88081E58FB8E69CBAE4BFAEE782BCE6898BE5868C.meta.js
+// ==/UserScript==
